@@ -8,7 +8,7 @@ google_analytics: 'UA-97874793-2'
 # Setup
 title:            W9G
 tagline:          'Warren Cheng'
-description:      'Feel free to connect with me through <a href="">LinkedIn</a>; Or just shoot me an <a href="">Email</a>.'
+description:      'Feel free to connect with me through <a href="">LinkedIn</a>; Or just shoot me an <a href="mailto:warren@warrencheng.dev">Email</a>.'
 # url:              http://hyde.getpoole.com
 baseurl:          https://warrencheng.dev/
 

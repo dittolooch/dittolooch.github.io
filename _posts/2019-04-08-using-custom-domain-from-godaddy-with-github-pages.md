@@ -36,8 +36,7 @@ $ dig YOUR_GITHUB_USER_NAME.github.io
   * Host (second CNAME): www
   * Points to (second CNAME): YOUR_GITHUB_USER_NAME.github.io
   * TTL (second CNAME): Custom 600
-
-  * So in my case...
+  * <strong>So in my case...</strong>
   * Host: warrencheng.dev
   * Points to: www.warrencheng.dev
   * TTL: Custom 600

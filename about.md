@@ -14,7 +14,7 @@ Having had the fortune of discovering my interests in software development, I se
 
 ## Contact
 * Current Location: []
-* Email: []
+* Email: warren@warrencheng.dev
 
 
 ## Projects

@@ -1,26 +1,24 @@
 # Dependencies
-markdown:         redcarpet
 highlighter:      rouge
 
 # Permalinks
-permalink:        pretty
+permalink:        prettys
 
 
 # Setup
-title:            WCHENG
+title:            W9G
 tagline:          'Warren Cheng'
-description:      'Trying to write regularly...'
+description:      'Trying to write regularly about tech and finance...or I might just ramble.'
 # url:              http://hyde.getpoole.com
 baseurl:          https://warrencheng.dev/
 
 author:
   name:           'Warren Cheng'
-#   url:            
+#   url:
 
 paginate:         5
 
 # Custom vars
 version:          2.1.0
 
-github:
-  repo:           https://github.com/jn8029/jn8029.github.io
+github:           https://github.com/jn8029/

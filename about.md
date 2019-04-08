@@ -21,6 +21,6 @@ Having had the fortune of discovering my interests in software development, I se
 * [Taiwan Structured Product Information Scraper](https://github.com/jn8029/tdcc)
 
 
-Have questions or suggestions? Feel free to <a href="">email me</a> or <a href="">ask me on LinkedIn</a>.
+Have questions or suggestions? Feel free to <a href="mailto:warren@warrencheng.dev">email me</a> or <a href="">ask me on LinkedIn</a>.
 
 Thanks for reading!

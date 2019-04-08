@@ -11,7 +11,7 @@ title:            WCHENG
 tagline:          'Warren Cheng'
 description:      'Trying to write regularly...'
 # url:              http://hyde.getpoole.com
-baseurl:          /
+baseurl:          https://warrencheng.dev/
 
 author:
   name:           'Warren Cheng'

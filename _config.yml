@@ -4,7 +4,7 @@ highlighter:      rouge
 # Permalinks
 permalink:        prettys
 
-google_analytics: UA-97874793-2
+google_analytics: 'UA-97874793-2'
 # Setup
 title:            W9G
 tagline:          'Warren Cheng'
@@ -24,3 +24,5 @@ version:          2.1.0
 github:           https://github.com/jn8029/
 plugins:
   - jemoji
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem

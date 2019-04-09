@@ -4,7 +4,7 @@ highlighter:      rouge
 # Permalinks
 permalink:        prettys
 
-google_analytics: 'UA-97874793-2'
+google_analytics: UA-97874793-2
 # Setup
 title:            W9G
 tagline:          'Warren Cheng'

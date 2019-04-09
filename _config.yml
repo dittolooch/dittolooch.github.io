@@ -11,7 +11,7 @@ tagline:          'Warren Cheng'
 description:      'Feel free to connect with me through <a href="">LinkedIn</a>; Or just shoot me an <a href="mailto:warren@warrencheng.dev">Email</a>.'
 # url:              http://hyde.getpoole.com
 baseurl:          https://warrencheng.dev/
-
+excerpt_separator: <!--more-->
 author:
   name:           'Warren Cheng'
 #   url:

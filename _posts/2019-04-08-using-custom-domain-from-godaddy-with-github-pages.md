@@ -5,6 +5,7 @@ title: Using Custom Domain From Godaddy with Github Pages in 2019
 ## Github Pages & Jekyll
 
 [Github Pages](https://pages.github.com/) is a static site hosting service designed to host your personal, organization, or project pages directly from a GitHub repository. It fully supports [Jekyll](https://jekyllrb.com/), the static site generator powered by Ruby, so that you don't need to worry setup a database to store your contents. You can follow this [awesome post](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/) written by Barry Clark if you need an easy-to-follow guide to help you setup the page.
+<!--more-->
 
 ## Custom Domain with Github Pages
 

@@ -60,8 +60,8 @@ Learning Numpy and Pandas is essential because a lot of junior analysts get task
 If you want to learn how to scrape data from websites automatically, you should learn the basics of HTML, CSS, and JavaScript, the building blocks of any website.
 
 Go read:
-[HTML and CSS: Design and Build Websites](https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189)
-[JavaScript and jQuery: Interactive Front-End Web Development](https://www.amazon.com/JavaScript-jQuery-Interactive-Front-End-Development/dp/1118871650/ref=dp_rm_img_2)
+* [HTML and CSS: Design and Build Websites](https://www.amazon.com/HTML-CSS-Design-Build-Websites/dp/1118008189)
+* [JavaScript and jQuery: Interactive Front-End Web Development](https://www.amazon.com/JavaScript-jQuery-Interactive-Front-End-Development/dp/1118871650/ref=dp_rm_img_2)
 
 These two books serve as very decent introductory materials for the topics. Only after understanding how HTML/CSS/JS work together as a whole will you be able to scrape websites efficiently, with Python.
 

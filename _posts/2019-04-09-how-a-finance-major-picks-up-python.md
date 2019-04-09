@@ -22,30 +22,40 @@ Enough rambling. Let's get to the point.
 
 How to learn just enough programming to help my job as a business major?
 
+
 ## Learn how to use Google.
+
 
 If I ask you to download the eBook of Michael Lewis's Liar's Poker in .mobi format in 5 minutes. Can you do it? If not, you don't really know how to use Google, so go ahead and [learn it](https://support.google.com/websearch/answer/134479?hl=en)
 
 (by the way, you shouldn't download pirated books online, please respect others' intellectual property rights)
 
+
 ## Learn Basic Python
+
 
 I recommend [Introducing Python: Modern Computing in Simple Packages](https://www.amazon.com/Introducing-Python-Modern-Computing-Packages/dp/1449359361). Read Ch.1 - Ch.8. It'll teach you the basics of the basics of Python, and no it won't be interesting. The basics of everything is not fun. It merely prepares you for the fun parts that are to come, if you persevere.
 
+
 ## Practice Python Basics with 2 Projects
+
 
 Read [Python Crash Course: A Hands-On, Project-Based Introduction to Programming](https://www.amazon.com/Python-Crash-Course-Hands-Project-Based/dp/1593276036/ref=sr_1_1?keywords=python+crash+course&qid=1554798353&s=books&sr=1-1).
 
 Quickly finish <strong>Part 1: Basics</strong>. They should look very familiar because you have learned most of them from the previous book. Use this opportunity to review and reinforce the basics.
 Work on Project 1 and 2 from Part 2 of this book. You will be utilizing what you've learned on actual projects that are less-boring than just printing various numbers and text on the terminal!
 
+
 ## Learn to Work with Data
+
 
 Study Section 1 to 13 on Udemy's [Python for Data Science and Machine Learning](https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/learn/v4/content). Before you pay whatever price is shown to you on Udemy's website, please use your Googling skills and find coupon codes online. I paid USD$5 for the course, so you shouldn't pay a lot more than $5.
 
 Learning Numpy and Pandas is essential because a lot of junior analysts get tasks that involve working in spreadsheets with couple thousand rows. Sometimes it's faster to just sort the data in Pandas, and sometimes it's faster to just do it on Excel, depending on the circumstances. Feel free to skip the machine learning part of the course, it's only teaching you how to use libraries without going deep into the theories and math of machine learning.
 
+
 ## Learn HTML/CSS/JavaScript
+
 
 If you want to learn how to scrape data from websites automatically, you should learn the basics of HTML, CSS, and JavaScript, the building blocks of any website.
 
@@ -57,6 +67,7 @@ These two books serve as very decent introductory materials for the topics. Only
 
 
 ## Optional
+
 
 If you want to go further, google the topics below:
 

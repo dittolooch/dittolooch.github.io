@@ -2,6 +2,7 @@
 layout: post
 title: Using Custom Domain From Godaddy with Github Pages in 2019
 excerpt_separator: <!--more-->
+tags: [github, godaddy, jekyll]
 ---
 ## Github Pages & Jekyll
 

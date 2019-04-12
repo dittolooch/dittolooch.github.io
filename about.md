@@ -19,7 +19,7 @@ Having had the fortune of discovering my interests in software development, I se
 
 ## Projects
 * [Taiwan Structured Product Information Scraper](https://github.com/jn8029/tdcc)
-
+* [Google Extension: Vocabulary Highlighter](https://github.com/jn8029/VocabularyHighlighter)
 
 Have questions or suggestions? Feel free to <a href="mailto:warren@warrencheng.dev">email me</a> or <a href="">ask me on LinkedIn</a>.
 

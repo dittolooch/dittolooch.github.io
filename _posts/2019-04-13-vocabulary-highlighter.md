@@ -70,7 +70,13 @@ Eventually I chose to walk the descendants of ```body``` and execute the highlig
 {% highlight js %}
 
 function textNodesUnder(el){
-  var n, a=[], walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null,false);
+  var n, a=[];
+  var walk=
+  document.createTreeWalker(
+    el,
+    NodeFilter.SHOW_TEXT,
+    null,
+  false);
   while(n=walk.nextNode()){
       if (n.tagName!="SCRIPT"){
         a.push(n);
@@ -89,7 +95,8 @@ function highlight_text_node(node, found_words){
     node_text_value = node.nodeValue
     found_words.forEach(function(word){
       node_text_value = node_text_value.replace(
-      word,`<span class="highlighter highlight-on">${word}</span>`)
+      word,
+      `<span class="highlighter highlight-on">${word}</span>`)
     })
     return node_text_value
 
@@ -101,7 +108,8 @@ Finally we can replace the text node content of the innerHTML with the highlight
 
 {% highlight js %}
 
-updated_text_node_value = highlight_text_node(node,found_words)
+updated_text_node_value =
+highlight_text_node(node,found_words)
 node.parentElement.innerHTML =
 node.parentElement.innerHTML.replace(
     node.nodeValue,

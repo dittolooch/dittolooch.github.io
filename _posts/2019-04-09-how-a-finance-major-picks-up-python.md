@@ -5,16 +5,20 @@ excerpt_separator: <!--more-->
 tags: [python]
 ---
 
-![python-logo-master-v3-TM](https://user-images.githubusercontent.com/44837996/55782192-56fa6200-5ade-11e9-806e-b48fa0de937b.png)
 
 
 > So I wanna learn programming as a business major, but I only want to learn things that [are/can be/might be] useful for my job. Where do I start?
 
-<!--more-->
+
 
 Yes, it's just like the English mania that stormed Asia in the 90s all over again. Since former U.S. President Barack Obama unveiled his [Computer Science for All Initiative](https://obamawhitehouse.archives.gov/blog/2016/01/30/computer-science-all), people have been asking whether we REALLY need to learn programming. If you are looking for the answer to that question here in this post, you are free to go now, because you won't find it.
 
 For whatever reasons you (as a business major) believe that you need to or want to learn programming, this post offers a guide to learning just enough to help you work with better efficiency.
+
+<!--more-->
+
+![python-logo-master-v3-TM](https://user-images.githubusercontent.com/44837996/55782192-56fa6200-5ade-11e9-806e-b48fa0de937b.png)
+
 
 Having worked in 5 financial institutions as an analyst/intern of the lowest level, I am well aware that junior staffs working in the business sides of the business (Did I just say that?) are oftentimes tasked with lots of mundane and repetitive tasks, such as updating certain excel spreadsheets daily that involves following some intricate N-step process designed by the predecessor you never had the chance to meet, or downloading data from some ill-designed websites by clicking "next page" for 200 times.
 

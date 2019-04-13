@@ -9,12 +9,14 @@ tags: [javascript, chrome, extension]
 > Vocabulary Highlighter is a Google Chrome Extension that automatically highlights high-frequency GRE words as you browse the web.
 
 
-![Chrome](https://user-images.githubusercontent.com/44837996/56078102-a01c2000-5e16-11e9-95a2-928e50108f67.png)
+## Why build Vocabulary Highlighter?
+When I was preparing for the [GRE](https://www.ets.org/gre), I knew that memorising a decent number of GRE level vocabulary is required in order to do well in the verbal section, especially for someone whose first language is not English. Among so many exam preparation service providers, [Magoosh](https://gre.magoosh.com/) is undoubtedly one of the most popular, because of its practical tips, easy-to-use UI, and most importantly, its affordability, and they also have [Magoosh's GRE FlashCard](https://gre.magoosh.com/flashcards/vocabulary) freely available to anyone who wants to expand their vocabulary base and improve their GRE verbal score.
+
 
 <!--more-->
 
-## Why build Vocabulary Highlighter?
-When I was preparing for the [GRE](https://www.ets.org/gre), I knew that memorising a decent number of GRE level vocabulary is required in order to do well in the verbal section, especially for someone whose first language is not English. Among so many exam preparation service providers, [Magoosh](https://gre.magoosh.com/) is undoubtedly one of the most popular, because of its practical tips, easy-to-use UI, and most importantly, its affordability, and they also have [Magoosh's GRE FlashCard](https://gre.magoosh.com/flashcards/vocabulary) freely available to anyone who wants to expand their vocabulary base and improve their GRE verbal score.
+![Chrome](https://user-images.githubusercontent.com/44837996/56078102-a01c2000-5e16-11e9-95a2-928e50108f67.png)
+
 
 After memorising all 1000 words in the app, I tried to read as much The Economist as possible to not only review the new vocabulary I have learned, but also to familiarise myself with long and difficult passages common in GRE's verbal section, and therefore I found [Magoosh GRE Vocabulary Highlighter](https://chrome.google.com/webstore/detail/magoosh-gre-vocab-highlig/hlkndiknofmlmajfocifccmplknafjeo?hl=en), a Chrome extension that highlights the 1000 words included in the aforementioned app.
 

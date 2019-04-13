@@ -5,9 +5,11 @@ excerpt_separator: <!--more-->
 tags: [javascript, chrome, extension]
 ---
 
-![Chrome](https://user-images.githubusercontent.com/44837996/55928618-fbe67d80-5c4b-11e9-938a-4b21e064155f.jpg)
 
 > Vocabulary Highlighter is a Google Chrome Extension that automatically highlights high-frequency GRE words as you browse the web.
+
+
+![Chrome](https://user-images.githubusercontent.com/44837996/56078102-a01c2000-5e16-11e9-95a2-928e50108f67.png)
 
 <!--more-->
 

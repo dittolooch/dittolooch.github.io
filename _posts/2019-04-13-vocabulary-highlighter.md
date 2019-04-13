@@ -76,11 +76,13 @@ function textNodesUnder(el){
   }
   return a;
 }
+
 {% endhighlight %}
 
 Then we can scan every word in the text node without worrying about HTML tags because the value of each text node is its pure text content.
 
 {% highlight js %}
+
 function highlight_text_node(node, found_words){
     node_text_value = node.nodeValue
     found_words.forEach(function(word){
@@ -90,25 +92,31 @@ function highlight_text_node(node, found_words){
     return node_text_value
 
 }
+
 {% endhighlight %}
 
 Finally we can replace the text node content of the innerHTML with the highlighted text node content produced by the ```function highlight_text_node```.
 
 {% highlight js %}
+
 updated_text_node_value = highlight_text_node(node,found_words)
 node.parentElement.innerHTML =
 node.parentElement.innerHTML.replace(
     node.nodeValue,
     updated_text_node_value
 )
+
 {% endhighlight %}
 
 This implementation still might destroy the web page's structure if there are DOMs with only one word that happen to be in the selected word list.
 
 For example:
+
 ```<a class="grandiloquent">grandiloquent</a>```
 
-The text node of this ```a``` tag is ```grandiloquent```, so ```function highlight_text_node``` will produce:
+
+
+The text node of this <strong>a</strong> tag is <strong>grandiloquent</strong>, so <strong>function highlight_text_node</strong> will produce:
 
 ```<span class="highlighter highlight-on">grandiloquent</span>```
 

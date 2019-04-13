@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vocabulary Highlighter: a Chrome Extension
+title: Vocabulary Highlighter, a Chrome Extension
 excerpt_separator: <!--more-->
 tags: [javascript, chrome, extension]
 ---
@@ -8,6 +8,8 @@ tags: [javascript, chrome, extension]
 ![Chrome](https://user-images.githubusercontent.com/44837996/55928618-fbe67d80-5c4b-11e9-938a-4b21e064155f.jpg)
 
 > Vocabulary Highlighter is a Google Chrome Extension that automatically highlights high-frequency GRE words as you browse the web.
+
+<!--more-->
 
 ## Why build Vocabulary Highlighter?
 When I was preparing for the [GRE](https://www.ets.org/gre), I knew that memorising a decent number of GRE level vocabulary is required in order to do well in the verbal section, especially for someone whose first language is not English. Among so many exam preparation service providers, [Magoosh](https://gre.magoosh.com/) is undoubtedly one of the most popular, because of its practical tips, easy-to-use UI, and most importantly, its affordability, and they also have [Magoosh's GRE FlashCard](https://gre.magoosh.com/flashcards/vocabulary) freely available to anyone who wants to expand their vocabulary base and improve their GRE verbal score.

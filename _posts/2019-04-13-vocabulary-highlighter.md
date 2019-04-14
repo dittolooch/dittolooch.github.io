@@ -144,6 +144,6 @@ Nevertheless I do not worry too much about this potential bug because of the obs
 
 I never really learned much about JavaScript so the code definitely looks messy. Having decided to build this extension at the spur of the moment, I just wanted to hack it up and get it to run with minimal external packages and minimal time.
 
-Quizlet has a free API that allows developers to get any Quizlet User's vocabulary set. It would be a nice improvement of functionality if you can build up your Quizlet sets over time and then the Vocabulary Highlighter is able to sync with the sets and help you identify the words you recently added to your Quizlet sets.
+On the side note, Quizlet has a free API that allows developers to get any Quizlet User's vocabulary set. It would be a nice improvement of functionality if you can build up your Quizlet sets over time and then the Vocabulary Highlighter is able to sync with the sets and help you identify the words you recently added to your Quizlet sets.
 
-That's it. Go ahead and read [Google's Tutorial](https://developer.chrome.com/extensions/getstarted), and build your own small extension for fun.
+That's it. If you are interested, the project repository is [here](https://github.com/jn8029/VocabularyHighlighter).

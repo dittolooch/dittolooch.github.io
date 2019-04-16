@@ -27,7 +27,7 @@ Since another article on  <strong>"How I went from scoring 73 to 113 on TOEFL in
 
 Once you have everything ready, do a diagnostic test on GRE OG (timed!) and familiarize yourself with the test format and time constraint.
 
-Don't be discourage by the diagnostic test results. I got less than half of the questions right.
+Don't be discouraged by the diagnostic test results. I got less than half of the questions right.
 
 
 ## Vocabulary

@@ -35,23 +35,23 @@ Don't be discouraged by the diagnostic test results. I got less than half of the
 2. Spend 2 hours a day in the second month memorising WordFest's first 100 units (another 1000 words)
 
 There are many different techniques to memorize vocabulary. Since a technique that works for me might just not work for you, I will not go into detail about how I did it. I will, however,
-share some auxiliary techniques that had helped me review and strengthen the impression of the newly learned words.
+share some auxiliary techniques that helped me review and strengthen the impression of the newly learned words.
 - Record the 40 words + definitions + example sentences in an audio note and listen to it when commuting
 - On a weekly cycle, review every word that you have studied in the week before you start learning new words. i.e. on Tuesday, review words learned on Monday; on Wednesday, review words learned on Monday and Tuesday etc.
 - On Sundays, review words learned throughout the week. (I do not learn new words on Sundays.)
-- After each review session, write down the words you don't remember, on post-its and past them on the wall in your bedroom so that you get to see them every day you wake up.
-- Use these big GRE words when chatting with friends on social media.
+- After each review session, write down the words you don't remember on post-its and paste them on the wall in your bedroom so that you get to see them every day you wake up.
+- Use GRE-level words when chatting with friends on social media.
 
 ## Magoosh's GRE Course
-The course offers many useful tips on how to answer the questions efficiently. Finish the courses in 1-2 weeks before you do lots of test questions.
+The course offers many useful tips on how to answer the questions efficiently. Finish the courses in 1-2 weeks before you start doing lots of practice questions.
 
 ## Do A Lot Of Practice Questions
 
-In the third week you should have finished the Magoosh Courses and memorized 840 words from Magoosh's GRE FlashCards. It's time to start doing lots and lots of practice questions. Since you are spending 2 hours a day memorizing vocabulary, you should have >3 hours left per day to do practice questions.
+In the third week you should have finished the Magoosh Courses and memorized 840 words from Magoosh's GRE FlashCards. It's time to start doing lots and lots of practice questions. Since you are spending 2 hours a day memorizing vocabulary, you should have ~3 hours left per day to do practice questions.
 
-Magoosh has about 550 verbal test questions in its test bank. Do a 30-min 20-question practice session everyday and review the test results carefully. Understand why you got each question right and why you got each question wrong.
+Magoosh has about 550 verbal test questions in its test bank. Do a 30-minute, 20-question practice session everyday and review the test results carefully. Understand why you get each question right and why you get each question wrong.
 
-<strong>Do not skip reviewing the questions you answered correctly.</strong>
+<strong>Do not skip reviewing the questions you answer correctly.</strong>
 
 Try to memorize every word that you do not know in the question prompts, question options, and reading passages. The review of each 20-question practice session should take about 2.5 hours.
 

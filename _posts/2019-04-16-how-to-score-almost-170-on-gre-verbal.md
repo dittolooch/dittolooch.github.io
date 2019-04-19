@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How To Score Almost 170 On GRE's Verbal Section
-excerpt_separator: <!--more-->
 tags: [gre]
 ---
 

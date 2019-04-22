@@ -6,7 +6,7 @@ tags: [javascript, chrome, extension]
 ---
 
 
-> Vocabulary Highlighter is a Google Chrome Extension that automatically highlights high-frequency GRE words as you browse the web.
+> [Vocabulary Highlighter](https://chrome.google.com/webstore/detail/vocabulary-highlighter/pajikbgjooomggbhdalmlgiimicopmdi) is a Google Chrome Extension that automatically highlights high-frequency GRE words as you browse the web.
 
 
 ## Why build Vocabulary Highlighter?
@@ -147,3 +147,4 @@ I never really learned much about JavaScript so the code definitely looks messy.
 On the side note, Quizlet has a free API that allows developers to get any Quizlet User's vocabulary set. It would be a nice improvement of functionality if you can build up your Quizlet sets over time and then the Vocabulary Highlighter is able to sync with the sets and help you identify the words you recently added to your Quizlet sets.
 
 That's it. If you are interested, the project repository is [here](https://github.com/jn8029/VocabularyHighlighter).
+You can also install the extension from [Chrome Web Store](https://chrome.google.com/webstore/detail/vocabulary-highlighter/pajikbgjooomggbhdalmlgiimicopmdi)

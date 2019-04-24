@@ -9,7 +9,7 @@ title: About
 
 I was a derivatives salesperson in the investment banking industry for 2 years and later on co-founded a peer-to-peer lending platform for college students in Taiwan.
 
-Having had the fortune of discovering my interests in software development, I set out to become a tech professional working within finance and technology in the United States.
+I am not a software developer (yet) but I am working on becoming one in the near future.
 
 
 ## Contact

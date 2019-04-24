@@ -106,4 +106,4 @@ Quite often I encounter errors related to memory allocation and pointers, so I j
 
 Here's the gist of the singly linked list based stack.
 
-{% gist f50e64e07a80be7cd555a0d31f42df03 gist.md %}
+{% gist f50e64e07a80be7cd555a0d31f42df03 %}

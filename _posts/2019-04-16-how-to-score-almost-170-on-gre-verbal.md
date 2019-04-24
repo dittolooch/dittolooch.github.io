@@ -11,7 +11,7 @@ My first language is Mandarin Chinese and I scored 169/170 on GRE's verbal secti
 
 8 years before I started to prepare for the GRE in December, 2018, I had sat the TOEFL once and scored 113 (R30, L29, S27, W27). Since
 then I have not taken any English proficiency test, so I don't really know at what level my English proficiency was when I sat the GRE.
-Nevertheless that TOEFL score from 8 years go should be a fairly good estimate.
+Nevertheless that TOEFL score from 8 years ago should be a fairly good estimate.
 
 I would like you to know this beforehand so that you are not misled to believe that
 following what I did for GRE preparation would definitely get you a great GRE verbal score as a <abbr title="English as a Second Language">ESL</abbr> student. You might want to improve your English proficiency to a certain level before you embark on studying for the GRE.

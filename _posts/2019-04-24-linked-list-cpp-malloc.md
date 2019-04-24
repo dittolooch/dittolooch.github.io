@@ -96,7 +96,7 @@ use malloc
 In a for loop that calls the ```push``` function for 5 times, a stack frame is pushed on the stack every time ```push``` is called, and then is popped when the execution finishes. The node variable created in that stack frame is always stored in that same memory space, as seen in the output above (0x7ffee0b33110).
 
 
-This proves my theory, and it explains why initiating the node ```struct Node node;``` does not work.
+This proves my theory, and it explains why initiating the node with ```struct Node node;``` does not work.
 
 ## Final Words
 

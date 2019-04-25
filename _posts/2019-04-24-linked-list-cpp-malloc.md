@@ -100,10 +100,11 @@ This proves my theory, and it explains why initiating the node with ```struct No
 
 ## Final Words
 
-I chose C++ to practice implementing data structure and algorithms because the class I am taking only allows C++ and Java, and I know nothing about Java.
-
-Quite often I encounter errors related to memory allocation and pointers, so I jot down this note as a reminder for myself, and for anyone who might find it useful.
 
 Here's the gist of the singly linked list based stack.
 
 {% gist f50e64e07a80be7cd555a0d31f42df03 %}
+
+I chose C++ to practice implementing data structure and algorithms because the class I am taking only allows C++ and Java, and I know nothing about Java.
+
+Quite often I encounter errors related to memory allocation and pointers, so I jot down this note as a reminder for myself, and for anyone who might find it useful.

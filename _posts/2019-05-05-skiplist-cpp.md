@@ -16,9 +16,13 @@ You can also watch MIT's course [video](https://www.youtube.com/watch?v=2g9OSRKJ
 
 ## Search Cost
 
-The elements in L1 are assumed to be interspersed equally and therefore with 2 linked lists L0 and L1, the search cost is approx. equal |L1| + |L0| / |L1|
+The elements in L1 are assumed to be interspersed equally and therefore with 2 linked lists L0 and L1, the search cost approx. equals
 
-Because in the worst case you'll have to traverse for |L1|-1 element and move downwards, and then traverse the rest of L0. Since L1 is interspersed equally, the remaining L0 to traverse is at most |L0|/|L1|.
+```
+|L1| + |L0| / |L1|
+```
+
+Because in the worst case you'll have to traverse for ```|L1|-1``` element and move downwards, and then traverse the rest of L0. Since L1 is interspersed equally, the remaining L0 to traverse is at most ```|L0|/|L1|```
 
 In order to minimise the search cost, we apply second partial derivative test to learn how many elements there should be in L1.
 
@@ -78,7 +82,8 @@ y = |L0|
 For a skip list with 2 link lists, in order to mimimize the search cost we need to have the upper level list to have sqrt(|L0|) number of elements.
 
 let |L0| = n, the search cost would be
-|L1| + |L0| / |L1| = sqrt(n) + n/sqrt(n) = 2 * sqrt(n)
+
+```|L1| + |L0| / |L1| = sqrt(n) + n/sqrt(n) = 2 * sqrt(n)```
 
 We conclude:
 

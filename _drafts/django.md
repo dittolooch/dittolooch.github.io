@@ -340,3 +340,15 @@ until the {% endwith %} tag.
 {{ total_comments }} comment{{ total_comments|pluralize }}
 </h2>
 {% endwith %}
+
+
+# postgresql
+
+pip install psycopg2==2.7.4
+sudo apt-get install libpq-dev python-dev
+sudo apt-get install postgresql postgresql-contrib
+pip install psycopg2==2.7.4
+
+su - postgres
+createuser --interactive --pwprompt
+createdb -O user dbname

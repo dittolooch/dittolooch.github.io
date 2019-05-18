@@ -6,6 +6,9 @@ This is the repo for the jn8029 Github Pages. It includes the Jenkyll template "
 
 Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a prominent sidebar with uncomplicated content. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
+## Math Rendering
+
+[iTex2Img](http://www.sciweavers.org/free-online-latex-equation-editor)
 
 ## Author
 

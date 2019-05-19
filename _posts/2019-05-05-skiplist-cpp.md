@@ -81,13 +81,16 @@ y = |L0|\\
 |L1| = \sqrt{|L0|}\\
 $$
 
-For a skip list with 2 link lists, in order to minimize the search cost we need to have the upper level list to have $\sqrt{|L0|}\\$ number of elements.
-
-let $|L0| = n$, the search cost would be
+For a skip list with 2 link lists, in order to minimize the search cost we need to have the upper level list to have
 
 $$
+\sqrt{|L0|} \text{number of elements.}\\
+\text{let } |L0| = n\text{ , the search cost would be}\\
 \frac{|L1| + |L0|}{|L1|} = \sqrt{n} + \frac{n}{\sqrt{n}} = 2 \times \sqrt{n}\
 $$
+
+
+
 
 We conclude:
 

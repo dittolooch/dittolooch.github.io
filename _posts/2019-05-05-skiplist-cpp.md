@@ -95,11 +95,11 @@ We conclude:
 
 We can generalise the conclusion with:
 
-2 linked lists, search cost $= 2 \times n^(\frac{1}{2})$\b
-3 linked lists, search cost $= 3 \times n^(\frac{1}{3})$\b
-4 linked lists, search cost $= 4 \times n^(\frac{1}{4})$\b
+2 linked lists, search cost $= 2 \times n^{\frac{1}{2}}$ \br
+3 linked lists, search cost $= 3 \times n^{\frac{1}{3}}$ \br
+4 linked lists, search cost $= 4 \times n^{\frac{1}{4}}$ \br
 
-$\log_2{n}$ linked lists, search cost = $\log_2{n} \times n^(\frac{1}{\log_2{n}})$\b
+$\log_2{n}$ linked lists, search cost = $\log_2{n} \times n^(\frac{1}{\log_2{n}})$ \br
 
 Since $\frac{1}{log_2{n}} = \frac{\log_2{2}}{\log_2{n}} = \log_n{2}$ , we have search cost $= 2 \times \log_2{n}$
 
@@ -176,7 +176,7 @@ where each flip has a probability p of coming up heads.
 then for all r>0 we have (Chernoff's Bound)
 ```
 $$
-P( Y >= E[Y]+r ) \eq e^{ \frac{-2(r^2)}{m}}\\
+P( Y >= E[Y]+r ) \leq e^{ \frac{-2(r^2)}{m}}\\
 $$
 
 [Chernoff Bound](https://en.wikipedia.org/wiki/Chernoff_bound) tells us the probability of Y being larger than the expected value by r

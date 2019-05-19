@@ -9,6 +9,7 @@ Hyde is a brazen two-column [Jekyll](http://jekyllrb.com) theme that pairs a pro
 ## Math Rendering
 
 [iTex2Img](http://www.sciweavers.org/free-online-latex-equation-editor)
+[LATEX preview](https://cdn.rawgit.com/mathjax/MathJax/2.7.1/test/sample-dynamic-2.html)
 
 ## Author
 

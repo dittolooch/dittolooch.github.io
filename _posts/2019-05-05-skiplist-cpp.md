@@ -29,6 +29,7 @@ In order to minimise the search cost, we apply second partial derivative test to
 
 
 $$
+f(x,y) = \frac{x + y}{x} \\
 \frac{\partial f(x,y)}{\partial x}= 1-\frac{y}{x^2}\\
 \frac{\partial f(x,y)}{\partial x^2}=\frac{2y}{x^3}\\
 \frac{\partial f(x,y)}{\partial x}=\frac{1}{x}\\
@@ -36,11 +37,21 @@ $$
 \frac{\partial f(x,y)}{\partial x \partial y}=-\frac{1}{x^2}\\
 $$
 
+
 ```
 let:
 x = |L1|
 y = |L0|
 f(x,y) = x + y/x
+
+$$
+\frac{\partial f(x,y)}{\partial x}= 1-\frac{y}{x^2}\\
+\frac{\partial f(x,y)}{\partial x^2}=\frac{2y}{x^3}\\
+\frac{\partial f(x,y)}{\partial x}=\frac{1}{x}\\
+\frac{\partial f(x,y)}{\partial y^2}=0\\
+\frac{\partial f(x,y)}{\partial x \partial y}=-\frac{1}{x^2}\\
+$$
+
 
 fx = partial derivative of f(x,y) with respect to x
 fx = 1-y(x^-2)

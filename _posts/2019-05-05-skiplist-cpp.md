@@ -100,13 +100,13 @@ We conclude:
 
 We can generalise the conclusion with:
 
-2 linked lists, search cost $= 2 \times n^{\frac{1}{2}}$ \br
-3 linked lists, search cost $= 3 \times n^{\frac{1}{3}}$ \br
-4 linked lists, search cost $= 4 \times n^{\frac{1}{4}}$ \br
+2 linked lists, search cost $= 2 \times n^{\frac{1}{2}}$ <br/>
+3 linked lists, search cost $= 3 \times n^{\frac{1}{3}}$ <br/>
+4 linked lists, search cost $= 4 \times n^{\frac{1}{4}}$ <br/>
 
-$\log_2{n}$ linked lists, search cost = $\log_2{n} \times n^(\frac{1}{\log_2{n}})$ \br
+$\log_2{n}$ linked lists, search cost = $\log_2{n} \times n^(\frac{1}{\log_2{n}})$ <br/>
 
-Since $\frac{1}{log_2{n}} = \frac{\log_2{2}}{\log_2{n}} = \log_n{2}$ , we have search cost $= 2 \times \log_2{n}$
+Since $\frac{1}{log_2{n}} = \frac{\log_2{2}}{\log_2{n}} = \log_n{2}$ , we have search cost $= 2 \times \log_2{n}$ <br/>
 
 
 We generalise the conclusion:

@@ -47,9 +47,11 @@ $$
 1 - \frac{y}{x^2} = 0 \\
 \frac{y}{x^2} = 1 \\
 y = x^2 \\
+\text{let } \frac{\partial f(x,y)}{\partial y}=\frac{1}{x}\\
+\text{we have } \frac{1}{x} = 0 \text{ as undefined.}\\
 $$
 
-let $\frac{\partial f(x,y)}{\partial y}=\frac{1}{x}\\$, we have $\frac{1}{x} = 0 \\$ as undefined.
+
 
 
 Second partial derivative test: $H = \frac{\partial f(x,y)}{\partial x^2}\frac{\partial f(x,y)}{\partial y^2} - \frac{\partial f(x,y)}{\partial y^2}$

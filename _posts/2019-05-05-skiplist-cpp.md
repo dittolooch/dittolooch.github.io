@@ -28,13 +28,13 @@ Because in the worst case you'll have to traverse for ```|L1|-1``` element and m
 In order to minimise the search cost, we apply second partial derivative test to learn how many elements there should be in L1.
 
 
-$
+$$
 \frac{\partial f(x,y)}{\partial x}= 1-\frac{y}{x^2}\\
 \frac{\partial f(x,y)}{\partial x^2}=\frac{2y}{x^3}\\
 \frac{\partial f(x,y)}{\partial x}=\frac{1}{x}\\
 \frac{\partial f(x,y)}{\partial y^2}=0\\
 \frac{\partial f(x,y)}{\partial x \partial y}=-\frac{1}{x^2}\\
-$
+$$
 
 ```
 let:

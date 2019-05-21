@@ -42,18 +42,18 @@ Suppose the consumer and producer processes are run concurrently, at it just so 
 
 To execute the decrementation or incrementation of a variable, the cpu fetches the data from the memory location of the variable ```counter``` and store it in a register. It then increments (or decrements) the register by one and then save the data back into the memory location of ```counter``` variable.
 
-What's wrong here?
+### What's wrong here?
 
 Let's imagine that when it happens there are 4 items in the buffer and ```BUFFER_SIZE``` is equal to 10. Logically speaking, The producer would like to increment the ```counter``` by one so that counter should then be 5, and the consumer would decrement the counter after consumption so that the counter ends up being 4.
 
 However, since the programs are run concurrently, when both programs execute the incrementation/decrementation rows, the sequence of the underlying operations might look like
 
-T0: producer register1 = counter // register1 is 4 and counter is 4
-T1: producer register1 = register + 1 // register1 is 5, counter is still 4.
-T2: consumer register2 = counter // register2 is 4 and counter is still 4
-T3: producer counter = register1 // counter is now 5
-T4: consumer register2 = register2 - 1 // register2 is now 3
-T5: consumer counter = register2 // counter is now 3
+T0: producer register1 = counter // register1 is 4 and counter is 4<br>
+T1: producer register1 = register + 1 // register1 is 5, counter is still 4.<br>
+T2: consumer register2 = counter // register2 is 4 and counter is still 4<br>
+T3: producer counter = register1 // counter is now 5<br>
+T4: consumer register2 = register2 - 1 // register2 is now 3<br>
+T5: consumer counter = register2 // counter is now 3<br>
 
 Did you see it? In the end the counter is incorrectly set to 3 instead of what it should be (4).
 

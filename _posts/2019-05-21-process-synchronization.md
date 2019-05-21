@@ -5,6 +5,7 @@ tags: [os]
 mathjax: true
 ---
 
+>Wikipedia: Thread synchronization is defined as a mechanism which ensures that two or more concurrent processes or threads do not simultaneously execute some particular program segment known as critical section. 
 
 ## Race Condition & Critical Section Problem
 

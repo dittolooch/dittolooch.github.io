@@ -143,6 +143,7 @@ int compare_and_swap(int *value, int expected, int new_value){
     *value = new_value;
   }
   return temp;
+}
 ```
 
 ```
@@ -202,3 +203,84 @@ The implementation has a major drawback: spinlock. Spinlock means that when a pr
 The busy waiting wastes CPU cycle. However busy busy wait does not require context switch, which requires a significant amount of time. Thus if the process spins only for a short period of time, it's actually more advantageous to busy wait.
 
 Spinlocks are especially common for multi-processor systems because a thread can spin on one processor while another thread perform s its critical section on another processor.
+
+
+## Software Solution - Symaphore
+
+Semaphores help sync processes by incrementing and decrementing. There are two functions that work with semaphores: ```signal``` and ```wait```
+
+```
+wait (S){
+  while (S<=0){
+    //no resource, waiting
+  }
+  S--;
+}
+
+signal(S){
+ S++;
+}
+```
+
+For counting semaphores, their values can be in the range of all integers. Let's say for example there are 10 resources that are shared by <strong>n</strong> process where $n \geq 10$. The semaphore S is therefore initiated to 10 and each process calls wait(S) before executing its critical section which manipulates one resource, and calls signal when it has finished using the resource.
+
+The implementation above still suffers from spinlocks (the while loop); to improve it, we can revise the implementation as :
+
+```
+typedef struct {
+  int value;
+  struct process* queue;
+}semaphore;
+
+wait (S){
+  S--;
+  if (S<0){
+    add this process to S->queue.
+    block();
+  }
+}
+
+signal(S){
+  S++;
+  if (S->value<=0){
+    dequeue one process from S->queue
+    wakeup the process
+  }
+}
+```
+
+## Deadlocks and Starvation
+
+With the previous implementation of semaphores, we are introduced with two new concepts: deadlocks and starvation.
+
+For example, given two processes P1 and P2, they might be executing:
+
+```
+//process P1
+wait(S1);
+wait(S2);
+
+signal(S1);
+signal(S2);
+```
+
+```
+//process P2
+wait(S2);
+wait(S1);
+
+signal(S2);
+signal(S1);
+```
+
+In this example, let's assume S1 and S2 are binary semaphores.
+
+If P1 and P2 are run concurrently and both successfully pass the first line of their codes. P1 will then be blocked in ```wait(S2)``` because P2 has obtained the lock of S2. P2 will then be blocked in ```wait(S1)``` because P1 has obtained the lock of S1.
+
+Both are now trapped and can never get out because P1 relies on P2 calling ```signal(S2)``` and P2 relies on P1 calling ```signal(S1)``` to be waken up.
+
+Situations, where every process is waiting for an event (e.g. releasing the resource access) that can only be caused by another process, are called <strong>deadlocks</strong>.
+
+<strong>Starvation</strong>, on the other hand, happens when a process waits indefinitely in a semaphore, which might occur when the waiting list of the semaphore is implemented in a stack-like manner (last-in-first-out).
+
+5.6.4

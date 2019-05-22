@@ -5,14 +5,14 @@ tags: [os]
 mathjax: true
 ---
 
->Wikipedia: Thread synchronization is defined as a mechanism which ensures that two or more concurrent processes or threads do not simultaneously execute some particular program segment known as critical section. 
+>Wikipedia: Thread synchronization is defined as a mechanism which ensures that two or more concurrent processes or threads do not simultaneously execute some particular program segment known as critical section.
 
 ## Race Condition & Critical Section Problem
 
 Consider the following producer and consumer programs:
 
 
-{% highlight c++ %}
+```
 //producer process
 while(true){
     while(counter==BUFFER_SIZE){
@@ -22,11 +22,11 @@ while(true){
     in = (in+1)%BUFFER_SIZE;
     counter++;
 }
-{% endhighlight %}
+```
 
 
 
-{% highlight c++ %}
+```
 //consumer process
 while(true){
     while(counter==0){
@@ -36,14 +36,15 @@ while(true){
     out = (out+1)% BUFFER_SIZE;
     counter--;
 }
-{% endhighlight %}
+```
 
 
 Suppose the consumer and producer processes are run concurrently, at it just so happens that producer process enters the ```counter++``` row at about the same time as the consumer process entering the ```counter--``` row, a problem might occur.
 
 To execute the decrementation or incrementation of a variable, the cpu fetches the data from the memory location of the variable ```counter``` and store it in a register. It then increments (or decrements) the register by one and then save the data back into the memory location of ```counter``` variable.
 
-### What's wrong here?
+<strong>What's wrong here?
+</strong>
 
 Let's imagine that when it happens there are 4 items in the buffer and ```BUFFER_SIZE``` is equal to 10. Logically speaking, The producer would like to increment the ```counter``` by one so that counter should then be 5, and the consumer would decrement the counter after consumption so that the counter ends up being 4.
 
@@ -76,7 +77,7 @@ A qualified solution must satisfy
 
 Two processes share ```int turn;``` and ```boolean flag[2];```.
 
-{% highlight c++ %}
+```
 do{
     flag[i] = true;
     turn = j;
@@ -87,15 +88,15 @@ do{
     flag[i] = false;
     //remainder section, do something
 }while(true)
-{% endhighlight %}
+```
 
-### Mutual Exclusion (Mutex)
+<strong>Mutual Exclusion (Mutex)</strong>
 
 For process i to be in its critical section ```flag[j]``` must be false or ```turn==j``` must be false. Since turn cannot be j and i at the same time, mutual exclusion is achieved.
 
-### Progress & Bounded Waiting
+<strong>Progress & Bounded Waiting</strong>
 
-Process i can be prevented from entering its critical section if ```flag[j]``` stays true and ```turn==j``` stays true. 
+Process i can be prevented from entering its critical section if ```flag[j]``` stays true and ```turn==j``` stays true.
 
 Imagine that now process i is stuck in while loop waiting for process j, there are several cases to be examined:
 
@@ -105,5 +106,99 @@ Imagine that now process i is stuck in while loop waiting for process j, there a
 
 Thus, process i will enter its critical section (progress) after at most one time of process j's entering its critical section (bounded waiting)
 
+## Hardware Solution
+
+Hardware instructions that allow programmers to access/manipulate data <strong>atomically</strong> can help solve the critical section problem. By <i>atomically</i>, it means that the instructions are run as one uninterruptible unit.
+
+An example of such hardware instruction:
+
+```
+boolean test_and_set(boolean* target){
+  boolean rv = *target;
+  *target = true;
+  return rv;
+}
+```
+
+Given that ```test_and_set``` can be run atomically, it can be used to solve critical section problem like this:
+
+```
+
+boolean available = false;
+do {
+  while(!test_and_set(available)){
+    //lock not available, waiting
+  }
+  // critical section
+  available = true;
+} while(true);
+```
+
+Another example is ```compare_and_swap```:
+
+```
+int compare_and_swap(int *value, int expected, int new_value){
+  int temp = *value;
+  if (*value == expected){
+    *value = new_value;
+  }
+  return temp;
+```
+
+```
+do {
+  while(compare_and_swap(&lock, 0, 1) != 0){
+    //do nothing
+  }
+  //critical section
+  lock = 0;
+  //remainder section
+} while(true)
+```
+
+In this example, if 2 processes are run concurrently and both run the while statement. Since the function ```compare_and_swap``` is run atomically, one process would go first and the second one follows after the first one exits ```compare_and_swap```. At the beginning the lock is initiated as 0, so the first process that runs ```compare_and_swap``` is able to change the value of the lock (```(*value==expected)``` is true) and return its initial value of 0, thereby allowing process 1 to exit the while loop and enter its critical section. Process 2 now enters ```compare_and_swap``` and since ```*value != expected ``` it is trapped in the while loop until process 1 finishes its critical section and set the lock to 0.
 
 
+
+## Software Solution - Mutex Lock
+
+With ```acquire()``` and ```release()``` functions, a process has to acquire the lock before entering its critical section. If the local is not available, the process busy waits until the lock becomes available.
+
+```
+acquire(){
+  while(!available){
+    //do nothing, wait
+  }
+  available = false;
+}
+
+release(){
+  available = true;
+}
+```
+
+Both methods have to be able to be run atomically for it to work, therefore some hardware instructions that are run atomically can be of help to implement ```acquire``` and ```release```.
+
+Assuming we have a struct ```lock``` that has a variable ```int available```, we can implement the mutex lock as shown below:
+
+```
+typedef struct {
+  int available;
+} lock;
+
+void acquire(lock* mutex){
+  while (compare_and_swap(mutex->available, 0, 1)!=0){
+    //lock is not available, waiting
+  }
+}
+
+void release(lock *mutex){
+  test_and_set(mutex->available);
+}
+```
+
+The implementation has a major drawback: spinlock. Spinlock means that when a process is in its critical section, other waiting processes are in a continuous while loop (therefore spinning busily).
+
+The busy waiting wastes CPU cycle. However busy busy wait does not require context switch, which requires a significant amount of time. Thus if the process spins only for a short period of time, it's actually more advantageous to busy wait.
+
+Spinlocks are especially common for multi-processor systems because a thread can spin on one processor while another thread perform s its critical section on another processor.

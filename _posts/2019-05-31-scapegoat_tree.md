@@ -92,24 +92,21 @@ $$
 
 
 Proof by contradiction:
-
 $$
 \text{let } K = \{K_0,K_1, K_2...K_{d(\beta)}=\beta\}... \text{be the nodes in the path from root}\text{ to } \beta\\
 \text{suppose } \forall k \in K, k \text{ is }\alpha\text{-weight-balanced}\\
-
 \longrightarrow size(K_1) \le \alpha \times size(K_0) = \alpha \times size(T)\\
 \longrightarrow size(K_2) \le \alpha \times size(K_1) \le \alpha^2\times size(T)\\
 \longrightarrow size(K_3) \le \alpha \times size(K_2) \le \alpha^3\times size(T)\\
 ...\\
 \longrightarrow size(K_{d(\beta)}) \le \alpha \times size(K_{d(\beta)}) \le \alpha^{d(\beta)}\times size(T)\\
 $$
-Since $K_{d(\beta)} = \beta\text{ is a deep node and }$, $d(\beta)  >  h_{\alpha}(T) = \lfloor{\log_{2}{size(T)}}\rfloor$. It follows that...
 
+Since $K_{d(\beta)} = \beta$ is a deep node and, d($\beta$)>$h_{\alpha}(T)$ = $\lfloor{\log_{2}{size(T)}}\rfloor$. It follows that...
 $$
 \longrightarrow 1 = size(\beta) \le \alpha^{d(\beta)}\times size(T) < 0.5^{ \lfloor{\log_{2}{size(T)}}\rfloor}\times size(T) \\
 \longrightarrow 1 = size(\beta) \le \alpha^{d(\beta)}\times size(T) < \frac{1}{size(T)}\times size(T) \\
-\longrightarrow 1 = size(\beta) <1  \\
-\longrightarrow contradiction\\
+\longrightarrow 1 = size(\beta) <1 \longrightarrow contradiction\\
 \longrightarrow \neg (\forall k \in K, k \text{ is }\alpha\text{-weight-balanced})\\
 \longrightarrow \exists k \in K, k \text{ is NOT }\alpha\text{-weight-balanced}\\
 $$

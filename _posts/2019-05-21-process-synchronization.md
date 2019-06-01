@@ -205,7 +205,7 @@ The busy waiting wastes CPU cycle. However busy busy wait does not require conte
 Spinlocks are especially common for multi-processor systems because a thread can spin on one processor while another thread perform s its critical section on another processor.
 
 
-## Software Solution - Symaphore
+## Software Solution - Semaphore
 
 Semaphores help sync processes by incrementing and decrementing. There are two functions that work with semaphores: ```signal``` and ```wait```
 
@@ -283,4 +283,12 @@ Situations, where every process is waiting for an event (e.g. releasing the reso
 
 <strong>Starvation</strong>, on the other hand, happens when a process waits indefinitely in a semaphore, which might occur when the waiting list of the semaphore is implemented in a stack-like manner (last-in-first-out).
 
-5.6.4
+## Priority Inversion
+
+let L, M, H be three process with priorities Lp < Mp < Hp.
+Suppose L is currently using resource R and H requires access to R too and is waiting for L to release the resource. At the same time, M becomes available to run and preempting L. This allows M to be able to indirectly affect how long H waits for L to release R, which is called priority inversion.
+
+A [priority inheritance protocol](https://en.wikipedia.org/wiki/Priority_inheritance) can be implemented to resolve this problem. With this protocol, all processing accessing resources needed by a higher priority process inherit the higher priority until they are finished with the resources.
+
+Let's look at the previous example again:
+L is using R, and H comes in and requests for access to R. L now has temporarily inherits the Hp priority, and when M becomes runnable, it cannot preempt a process with higher priority Hp that L current represents. When L finishes with R, it retains its original process priority Lp, H gets access to R and starts running while M keeps waiting until L is done.

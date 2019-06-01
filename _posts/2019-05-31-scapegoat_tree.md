@@ -87,10 +87,12 @@ $$
 \text{i.e. } d(\beta)  >  h_{\alpha}(T) = \lfloor{\log_{2}{size(T)}}\rfloor\\
 \exists W \in \text{ancestors of } \beta \text{ such that } W \text{ is not
  }\alpha\text{-weight-balanced: }\\
-size(W.left) \ge \alpha \times size(x) \vee
-size(W.right) \ge \alpha \times size(x)\\
+size(W.left) \ge \alpha \times size(x) \vee size(W.right) \ge \alpha \times size(x)\\
 $$
+
+
 Proof by contradiction:
+
 $$
 \text{let } K = \{K_0,K_1, K_2...K_{d(\beta)}=\beta\}... \text{be the nodes in the path from root}\text{ to } \beta\\
 \text{suppose } \forall k \in K, k \text{ is }\alpha\text{-weight-balanced}\\

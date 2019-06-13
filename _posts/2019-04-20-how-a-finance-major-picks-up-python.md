@@ -22,7 +22,7 @@ For whatever reasons you (as a business major) believe that you need to or want 
 
 Having worked in 5 financial institutions as an analyst/intern of the lowest level, I am well aware that junior staffs working in the business sides of the business (Did I just say that?) are oftentimes tasked with lots of mundane and repetitive tasks, such as updating certain excel spreadsheets daily that involves following some intricate N-step process designed by the predecessor you never had the chance to meet, or downloading data from some ill-designed websites by clicking "next page" for 200 times.
 
-I still remember that in 2014 when I was an intern in a US investment bank, I was asked to do exactly that: clicking next page for 200 times and copy data from the table to excel. If only I had [Taiwan Structured Product Information Scraper](https://github.com/jn8029/tdcc), I wouldn't have had to spent 6 hours on that.
+I still remember that in 2014 when I was an intern in a US investment bank, I was asked to do exactly that: clicking next page for 200 times and copy data from the table to excel. If only I had [Taiwan Structured Product Information Scraper](https://github.com/jn8029/tdcc), I wouldn't have had to spend 6 hours on that.
 
 Enough rambling. Let's get to the point.
 

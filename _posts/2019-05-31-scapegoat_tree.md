@@ -60,6 +60,8 @@ We rebuild the subtree rooted at $X_{i}$ by replacing it with a 0.5-weight-balan
 
 First we flatten the subtree by add the nodes into an auxiliary array using in-order traversal, and then we rebuild the tree with 'divide and conquer', i.e. recursively finding the mid of the array as the root of the subtree and recursively build the left child and right child.
 
+Note that we do not need to store a parent pointer for climbing the tree because the post-insertion rebalancing can make use of the path traversed for finding the appropriate slot for insertion. The individual nodes traversed can be stored in an auxiliary stack. But for this example I am using the parent pointer for convenience.
+
 ```
 BUILD-TREE(nodeList, start, end):
 if end<start:
@@ -105,6 +107,7 @@ $$
 $$
 
 Since $K_{d(\beta)} = \beta$ is a deep node and d($\beta$)>$h_{\alpha}(T)$ = $\lfloor{\log_{2}{size(T)}}\rfloor$. Also note that $\beta$ is the newly inserted node so the size of the tree rooted at $\beta$ is 1. It follows that...
+
 $$
 \longrightarrow 1 = size(\beta) \le \alpha^{d(\beta)}\times size(T) < 0.5^{ \lfloor{\log_{2}{size(T)}}\rfloor}\times size(T) \\
 \longrightarrow 1 = size(\beta) \le \alpha^{d(\beta)}\times size(T) < \frac{1}{size(T)}\times size(T) \\
@@ -112,3 +115,5 @@ $$
 \longrightarrow \neg (\forall k \in K, k \text{ is }\alpha\text{-weight-balanced})\\
 \longrightarrow \exists k \in K, k \text{ is NOT }\alpha\text{-weight-balanced}\\
 $$
+
+Therefore, we have proved that if given a deep node, we can always find a scapegoat node within the set of its ancestors.

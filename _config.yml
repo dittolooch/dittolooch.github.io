@@ -1,27 +1,27 @@
 # Dependencies
-highlighter:      rouge
+highlighter: rouge
 
 # Permalinks
-permalink:        /:title/
+permalink: /:title/
 
 google_analytics: UA-97874793-2
 # Setup
-title:            W9G
-tagline:          'Warren Cheng'
-description:      'Feel free to connect with me through <a href="">LinkedIn</a>; Or just shoot me an <a href="mailto:warren@warrencheng.dev">Email</a>.'
+title: W9G
+tagline: "Warren Cheng"
+description: 'Feel free to shoot me an <a href="mailto:warren@warrencheng.dev">Email</a> if you have any question.'
 # url:              http://hyde.getpoole.com
-baseurl:          
+baseurl:
 
 author:
-  name:           'Warren Cheng'
+  name: "Warren Cheng"
 #   url:
 
-paginate:         10
+paginate: 10
 
 # Custom vars
-version:          2.1.0
+version: 2.1.0
 
-github:           https://github.com/jn8029/
+github: https://github.com/jn8029/
 plugins:
   - jemoji
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

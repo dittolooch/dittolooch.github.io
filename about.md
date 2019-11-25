@@ -11,15 +11,18 @@ I was a derivatives salesperson in the investment banking industry for 2 years a
 
 I am not a software developer (yet) but I am working on becoming one in the near future.
 
+I am currently working on [Timmy](https://timmy.rent), a rent-a-friend platform that allows individuals to sell their companionship by the hour.
 
 ## Contact
-* Current Location: []
-* Email: warren@warrencheng.dev
 
+- Current Location: Taipei, Taiwan
+- Email: warren@warrencheng.dev
 
 ## Projects
-* [Taiwan Structured Product Information Scraper](https://github.com/jn8029/tdcc)
-* [Google Extension: Vocabulary Highlighter](https://github.com/jn8029/VocabularyHighlighter)
+
+- [Taiwan Structured Product Information Scraper](https://github.com/jn8029/tdcc)
+- [Google Extension: Vocabulary Highlighter](https://github.com/jn8029/VocabularyHighlighter)
+- [Timmy.Rent](https://timmy.rent)
 
 Have questions or suggestions? Feel free to <a href="mailto:warren@warrencheng.dev">email me</a> or <a href="">ask me on LinkedIn</a>.
 

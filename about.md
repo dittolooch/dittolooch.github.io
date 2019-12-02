@@ -15,7 +15,6 @@ I am currently working on [Timmy](https://timmy.rent), a rent-a-friend platform 
 
 ## Contact
 
-- Current Location: Taipei, Taiwan
 - Email: warren@warrencheng.dev
 
 ## Projects

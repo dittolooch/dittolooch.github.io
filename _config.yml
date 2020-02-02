@@ -8,7 +8,7 @@ google_analytics: UA-97874793-2
 # Setup
 title: W9G
 tagline: "Warren Cheng"
-description: 'Feel free to shoot me an <a href="mailto:warren@warrencheng.dev">Email</a> if you have any question.'
+description: 'Feel free to shoot me an <a href="mailto:">Email</a> if you have any question.'
 # url:              http://hyde.getpoole.com
 baseurl:
 
@@ -21,7 +21,7 @@ paginate: 10
 # Custom vars
 version: 2.1.0
 
-github: https://github.com/jn8029/
+github: https://github.com/dittolooch/
 plugins:
   - jemoji
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

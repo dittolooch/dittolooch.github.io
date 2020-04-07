@@ -7,13 +7,13 @@ permalink: /:title/
 google_analytics: UA-97874793-2
 # Setup
 title: W9G
-tagline: "Warren Cheng"
-description: 'Feel free to shoot me an <a href="mailto:">Email</a> if you have any question.'
+tagline: ""
+description: 'Welcome'
 # url:              http://hyde.getpoole.com
 baseurl:
 
 author:
-  name: "Warren Cheng"
+  name: "dittolooch"
 #   url:
 
 paginate: 10
